@@ -43,6 +43,17 @@ ul {
   list-style: none;
 }
 
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -74,4 +85,30 @@ ul {
 
 .navbar_menu_item:hover {
   background-color: var(--color-dark-pink);
+}
+
+/* Home */
+#home {
+  padding: 40px;
+  text-align: center;
+}
+
+.home_profile {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
+
+.home_title,
+.home_description {
+  color: black;
+}
+
+.home_contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
 }
