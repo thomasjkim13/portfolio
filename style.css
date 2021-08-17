@@ -94,22 +94,26 @@ button {
   outline: none;
 }
 
+/* Navbar */
 #navbar {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: transparent;
   align-items: center;
-  color: var(--color-white);
   padding: 16px;
 }
 
 .navbar_menu {
   display: flex;
+  color: var(--color-white);
 }
 
 .navbar_logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  color: var(--color-white);
 }
 
 .navbar_menu_item {
@@ -141,6 +145,7 @@ button {
   background-color: var(--color-dark-gray);
   /* background-image: url(); */
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 } 
 
