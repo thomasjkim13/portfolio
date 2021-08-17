@@ -339,6 +339,13 @@ button {
   top: 0;
   left: 0;
   opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--animation-duration) ease
+}
+
+.project:hover .project_description {
+  opacity: 0.8;
+  transform: translateY(0px);
 }
 
 .project_description h3 {
