@@ -452,6 +452,10 @@ button {
     display: none;
   }
 
+  .navbar_menu.open {
+    display: block;
+  }
+
   .about_majors {
     flex-direction: column;
   }
