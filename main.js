@@ -21,7 +21,7 @@ navbarMenu.addEventListener('click', (e) => {
     return;
   }
   
-  // Scroll the element to exact position
+  // // Scroll the element to exact position
   const scrollTo = document.querySelector(link);
   const top = scrollTo.offsetTop - navbarHeight < 0 ? 0 : scrollTo.offsetTop - navbarHeight + 16;  
   const left = scrollTo.offsetLeft;
@@ -30,13 +30,14 @@ navbarMenu.addEventListener('click', (e) => {
     left:0,
     behavior: 'smooth'
   });
-  // Navbar toggle button for small screen
-  const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
-  navbarToggleBtn.addEventListener('click', () => {
-    navbarMenu.classList.toggle('open');
-  })
 })
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
+const toggleMenu = document.querySelector('.navbar_menu')
+navbarToggleBtn.addEventListener('click', () => {
+  toggleMenu.classList.toggle('open');
+})
 
 // Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home_contact');
