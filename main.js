@@ -20,8 +20,7 @@ navbarMenu.addEventListener('click', (e) => {
     return;
   }
 
-  // console.log(e.target.dataset.link);
-  // Scroll the element
+  // Scroll the element to exact position
   const scrollTo = document.querySelector(link);
   const top = scrollTo.offsetTop - navbarHeight < 0 ? 0 : scrollTo.offsetTop - navbarHeight + 16;  
   const left = scrollTo.offsetLeft;
@@ -30,7 +29,15 @@ navbarMenu.addEventListener('click', (e) => {
     left:0,
     behavior: 'smooth'
   });
-  // scrollTo.scrollIntoView({ behavior: 'smooth' });
 })
 
 // Handle click on "contact me" button on home
+const homeContactBtn = document.querySelector('.home_contact');
+homeContactBtn.addEventListener('click', () => {
+  scrollIntoView('#contact')
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
