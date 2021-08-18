@@ -32,3 +32,5 @@ navbarMenu.addEventListener('click', (e) => {
   });
   // scrollTo.scrollIntoView({ behavior: 'smooth' });
 })
+
+// Handle click on "contact me" button on home
