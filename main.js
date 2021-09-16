@@ -30,6 +30,7 @@ navbarMenu.addEventListener('click', (e) => {
     left:0,
     behavior: 'smooth'
   });
+  navbarMenu.classList.remove('open');
 })
 
 // Navbar toggle button for small screen
