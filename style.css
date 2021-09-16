@@ -121,6 +121,7 @@ button {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-white);
+  margin-left: 10px;
 }
 
 .navbar_menu_item {
@@ -451,7 +452,9 @@ button {
 
   .navbar_toggle-btn {
     display: block;
-    margin-top: -9px;
+    top: 18px;
+    right: 16px;
+    font-size: var(--font-medium);
     
   }
 
@@ -461,7 +464,7 @@ button {
     background-color: var(--color-gray);
   }
 
-  #navbar.navbar--dark {
+  #navbar.navbar-dark {
     padding: 16px;
   }
 
@@ -474,6 +477,10 @@ button {
 
   .navbar_menu.open {
     display: block;
+  }
+
+  .home_contact:hover {
+    background-color: var(--color-light-gray)
   }
 
   .section {
@@ -496,5 +503,14 @@ button {
 
   .project {
     flex-grow: 1;
+  }
+
+  .arrow-up {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    right: 16px;
+    bottom: 16px;
   }
 }
