@@ -139,7 +139,7 @@ button {
 
 .navbar_toggle-btn {
   position: absolute;
-  top: 24px;
+  top: 16px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
@@ -175,6 +175,10 @@ button {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+.home_contact:hover {
+  background-color: var(--color-light-gray);
 }
 
 /* Section common */
@@ -436,8 +440,19 @@ button {
 
 /*  For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+      /* Font size */
+  --font-large: 30px;
+  --font-medium: 18px;
+  --font-regular: 16px;
+  --font-small: 14px;
+  --font-micro: 12px;
+  }
+
   .navbar_toggle-btn {
     display: block;
+    margin-top: -9px;
+    
   }
 
   #navbar {
@@ -461,12 +476,18 @@ button {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+  }
+
   .about_majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
