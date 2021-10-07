@@ -23,7 +23,7 @@
       <a href="#">TOM</a>
     </div>
     <div class="navbar_menu">
-      <ul class="navbar_menu">
+      <ul class="navbar_menu open">
         <li class="navbar_menu_item active" data-link='#home'>Home</li>
         <li class="navbar_menu_item" data-link='#about'>About</li>
         <li class="navbar_menu_item" data-link='#skills'>Skills</li>
@@ -42,10 +42,12 @@
 
   <!-- Home -->
   <section id="home">
-    <img src="imgs/Profile pic.png" alt="Tom's profile picture" class="home_profile" />
-    <h1 class="home_title">Hello, <br />I'm Your Future Developer</h1>
-    <h2 class="home_description">A Software Developer currently residing in Falls Church, Virginia</h2>
-    <button class="home_contact">Contact Me</button>
+    <div class="home_container">
+      <img src="imgs/profile.jpeg" alt="Tom's profile picture" class="home_profile" />
+      <h1 class="home_title">Hello, <br />I'm Your Future Developer</h1>
+      <h2 class="home_description">A Software Developer currently residing in Falls Church, Virginia</h2>
+      <button class="home_contact">Contact Me</button>
+    </div>
   </section>
 
   <!-- About -->
@@ -71,7 +73,7 @@
         </div>
         <h2 class="major_title">Mobile</h2>
         <div class="major_description">
-          React Native, Swift
+          In progress...
         </div>
       </div>
       <div class="major">
@@ -173,16 +175,16 @@
   <section id="work" class="section">
     <div class="section_container">
       <h1>My Work</h1>
-      <h3>Projects</h3>
-      <div class="work_categories">
-        <button class="category_btn">All<span class="category_count">4</span></button>
-        <button class="category_btn">Frontend<span class="category_count">3</span></button>
-        <button class="category_btn">Backend<span class="category_count">4</span></button>
-        <button class="category_btn">Mobile<span class="category_count">1</span></button>
-      </div>
+      <h2>Projects</h2>
+      <!-- Come back to it when I have mobile projects and backend projects -->
+      <!-- <div class="work_categories">
+        <button class="category_btn active" data-filter="*">All<span class="category_count">4</span></button>
+        <button class="category_btn" data-filter="front-end">Frontend<span class="category_count">3</span></button>
+        <button class="category_btn" data-filter="back-end">Backend<span class="category_count">4</span></button>
+      </div> -->
   
       <div class="work_projects">
-        <a href="github address" class="project" target=blank>
+        <a href="github address" class="project" target="blank">
           <img 
             src="snapshot of my project" 
             alt=""
@@ -193,9 +195,7 @@
             <span>Tic-tac-toe game using HTML, CSS, and JS</span>
           </div>
         </a>
-      </div>
-      <div class="work_projects">
-        <a href="github address" class="project" target=blank>
+        <a href="github address" class="project" target="blank">
           <img 
             src="snapshot of my project"
             alt=""
@@ -206,9 +206,7 @@
             <span>Tic-tac-toe game using HTML, CSS, and JS</span>
           </div>
         </a>
-      </div>
-      <div class="work_projects">
-        <a href="github address" class="project" target=blank>
+        <a href="github address" class="project" target="blank">
           <img 
             src="snapshot of my project" 
             alt=""
@@ -219,9 +217,7 @@
             <span>Tic-tac-toe game using HTML, CSS, and JS</span>
           </div>
         </a>
-      </div>
-      <div class="work_projects">
-        <a href="github address" class="project" target=blank>
+        <a href="github address" class="project" target="blank">
           <img
             src="snapshot of my project" 
             alt=""
@@ -242,10 +238,10 @@
     <h1 class="contact_title">Let's talk</h1>
     <h2 class="contact_email">thomasjkim13@gmail.com</h2>
     <div class="contact_links">
-      <a href="github profile site address" target="_blank">
+      <a href="https://github.com/thomasjkim13" target="_blank">
         <i class="fab fa-github"></i>
       </a>
-      <a href="linkedin profile site" target="_blank">
+      <a href="https://www.linkedin.com/in/thomasjkim13/" target="_blank">
         <i class="fab fa-linkedin"></i>
       </a>
     </div>
@@ -254,5 +250,10 @@
     </p>
   </section>
   
+  <!-- Arrow Up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
 </body>
 </html>
