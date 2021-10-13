@@ -13,6 +13,10 @@
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-link-water: #C3C8CC;
+  --color-cyan-blue: #032042;
+  --color-gray-blue: #5B868D;
+  --color-profile-background: #1A2621;
 
   /* Font size */
   --font-large: 48px;
@@ -108,7 +112,7 @@ button {
 }
 
 #navbar.navbar-dark {
-  background-color: var(--color-dark-gray);
+  background-color: var(--color-black);
   padding: 8px;
 }
 
@@ -149,7 +153,7 @@ button {
 
 /* Home */
 #home {
-  background-color: var(--color-dark-gray);
+  background-color: var(--color-profile-background);
   /* background-image: url(); */
   padding: 40px;
   padding-top: 120px;
@@ -159,8 +163,8 @@ button {
 .home_profile {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
-  border: 2px solid var(--color-light-white);
+  border-radius: 10%;
+  border: 2px solid var(--color-link-water);
 }
 
 .home_title,
