@@ -13,6 +13,10 @@
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-link-water: #C3C8CC;
+  --color-cyan-blue: #032042;
+  --color-gray-blue: #5B868D;
+  --color-profile-background: #1A2621;
 
   /* Font size */
   --font-large: 48px;
@@ -108,7 +112,7 @@ button {
 }
 
 #navbar.navbar-dark {
-  background-color: var(--color-dark-gray);
+  background-color: var(--color-black);
   padding: 8px;
 }
 
@@ -133,9 +137,18 @@ button {
   border-radius: var(--size-border-radius);
 }
 
-.navbar_menu_item:hover {
-  border: 1px solid var(--color-white);
-  background-color: var(--color-dark-pink);
+.navbar_menu_item::after {
+  background: var(--color-white);
+  content: '';
+  display: block;
+  height: 2px;
+  margin: auto;
+  transition: 0.5s;
+  width: 0%;
+}
+
+.navbar_menu_item:hover::after {
+  width: 100%;
 }
 
 .navbar_toggle-btn {
@@ -149,7 +162,7 @@ button {
 
 /* Home */
 #home {
-  background-color: var(--color-dark-gray);
+  background-color: var(--color-profile-background);
   /* background-image: url(); */
   padding: 40px;
   padding-top: 120px;
@@ -159,8 +172,8 @@ button {
 .home_profile {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
-  border: 2px solid var(--color-light-white);
+  border-radius: 10%;
+  border: 2px solid var(--color-link-water);
 }
 
 .home_title,
@@ -461,7 +474,7 @@ button {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-gray);
+    background-color: var(--color-profile-background);
   }
 
   #navbar.navbar-dark {
