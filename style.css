@@ -16,7 +16,9 @@
   --color-link-water: #C3C8CC;
   --color-cyan-blue: #032042;
   --color-gray-blue: #5B868D;
-  --color-profile-background: #1A2621;
+  --color-profile-background: #584534;
+  --color-skills: #d4caa3;
+  --color-contact: #293243;
 
   /* Font size */
   --font-large: 48px;
@@ -208,6 +210,7 @@ button {
 }
 
 /* About */
+
 .about_majors {
   display: flex;  
   justify-content: space-between;
@@ -247,7 +250,7 @@ button {
 /* Skills */
 
 #skills {
-  background-color: var(--color-yellow);
+  background-color: var(--color-skills);
 }
 
 .skillset {
@@ -407,7 +410,7 @@ button {
 /* Contact */
 
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-contact);
 }
 
 .contact_title,
