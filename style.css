@@ -449,7 +449,7 @@ button {
 }
 
 .arrow-up.visible {
-  opacity: 1;
+  opacity: .5;
   pointer-events: auto;
 }
 
