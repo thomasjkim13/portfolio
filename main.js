@@ -21,8 +21,9 @@ navbarMenu.addEventListener('click', (e) => {
     return;
   }
   
-  // // Scroll the element to exact position
+  // Scroll the element to exact position
   const scrollTo = document.querySelector(link);
+  // To have no white spaces in between 
   const top = scrollTo.offsetTop - navbarHeight < 0 ? 0 : scrollTo.offsetTop - navbarHeight + 16;  
   const left = scrollTo.offsetLeft;
   window.scrollTo({
